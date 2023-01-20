@@ -1,0 +1,81 @@
+.navbar-header{    /* we use the dot when we created the class on our own*/
+   font-weight: bolder; /* Stärke des Textes */
+}
+h1{         /* this is not a class we created on our own so there is no point */
+   text-align: center;
+}
+.menubar {
+   background: rgb(215, 215, 215)  /* Hintergrundfarbe */
+}
+.containerfluid {
+   display: flex;  /* Ausrichtung Text in einer Zeile (flex-> nebeneinander)*/
+   flex-wrap: wrap;  /* Auflistung der Elemente, wenn viele Elemente da sind */
+   align-items: center; /* items sind mittig(vertikal gemessen) im Fenster */
+   justify-content: space-between; /* das heißt die items sammeln sich rechts und links am rand */
+}
+.navbar-header-and-logo {
+   display: flex;   /* Ausrichtung bei Logo und Überschrift (contents->nebeneinander)*/
+   align-items: center;
+   padding-top: 1em;    /* Abstände von oben, unten und links */
+   padding-bottom: 1em;
+   padding-left: 2.5em;
+   font-size: 1.5rem;  /* Größe Icon */
+   line-height: inherit;  /* Zeilenabstand */
+   /* white-space: nowrap; */
+}
+.navbar-items {
+   display: -webkit-flex;
+   margin-right: 5em;
+}
+.navbar-item {
+   height: 5em;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.navbar-link {
+   padding: 0.6em 0.6em !important;
+   margin: 0 0.6em !important;
+}
+.text-black {
+   color: #232323 !important;
+}
+.display-5 {
+   font-family: 'DM Sans', sans-serif;
+   font-size: 2rem;
+   line-height: 1.5;
+}
+
+.display-7 {
+   font-family: 'DM Sans', sans-serif;
+   font-size: 1.6rem;
+   line-height: 1.5;
+   text-decoration: none;
+}
+.excel_icon{
+   width: 5em;
+}
+.excel_example{
+   width: 40em;
+}
+
+.subscribe-button:hover {
+   opacity: 0.7;
+} 
+.subscribe-button {
+   min-height: 2em;
+   font-family: Arial;
+   font-size: 1em;
+   border-radius: 0.5em;
+   cursor: pointer;
+   line-height: normal;
+   margin-right: 2em;
+   margin-left: 2em;
+
+   background-color: #04ab20;
+   color: white;
+   border: black;
+   padding: 0.5em 1em;
+   transition: opacity 0.15s;
+}
