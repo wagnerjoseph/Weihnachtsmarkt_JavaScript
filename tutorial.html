@@ -8,59 +8,86 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <header>
-      <h1>Tutorial:</h1>
-    </header>
-    <hr />
-    <main>
-      <p>
-        Hey Dad hier ist eine kleine Bedienungsanleitung für die Verwendung
-        dieser Website. Frag gerne Leo oder Puzi. Die können dir auch
-        weiterhelfen.
-      </p>
-      <p>
-        Zuerst musst du auf dem Desktop einen neuen Ordner anlegen in den zu die
-        Tabellen Speicherst. Nenne ihn am besten
-        <i>Weihnachtsmarkt_2023</i> oder so in der Art. Für jeden Tag musst du
-        eine neue Tabelle erstellen. Wir benutzern dafür Excel von Microsoft.
-      </p>
-      <figure>
-        <img class="excel_icon" src="/images/excel_icon.png" alt="Excel_icon" />
-        <figcaption>Microsoft Excel</figcaption>
-      </figure>
-      <p>
-        In die Tabelle kannst du die Verkäufe von einem Tag dann so wie im Bild
-        eintragen.
-      </p>
-      <figure>
-        <img
-          class="excel_example"
-          src="/images/excel_example.png"
-          alt="Excel_icon"
-        />
-      </figure>
-      <p>
-        Wenn du alle Verkäufe von einem Tag eingetragen hast solltest du die
-        Tabelle mit dem Namen des Datums speichern. Also zum Beispiel mit
-        <i>02.12.2022</i>. Als Speicherort sollst du den Ordner
-        <i>Weihnachtsmarkt_2023</i> auswählen damit du alle Tabellen schön an
-        einem Ort sammeln kannst.
-      </p>
-      <figure>
-        <img
-          class="excel_saved_data"
-          src="/images/excel_saved_data.png"
-          alt="Excel_icon"
-        />
-      </figure>
-      <p>
-        Das meiste ist jetzt geschaft. Du musst jetzt wieder auf die Startseite
-        gehen und auf den <i>Datei auswählen</i> knopf drücken. Dann kannst du
-        alle Tabellen aus dem Ordner auswählen und hochladen. Die Tabellen sind
-        jetzt hochgeladen und jetzt kann ein Dokument heruntergeladen werden und
-        Statistiken können betrachtet werden.
-      </p>
-    </main>
+   <script src="index.js"></script>
+   <section class="menubar"> <!--helpts to divide the program into pices and to load the webpage-->
+      <nav> <!--is a set of naviation links-->
+         <div class="containerfluid">
+            <div class="navbar-header-and-logo">                    
+               <a class="undercover-link" style="height: 2em" href="/images/Buben.jpeg">
+                  <img class="icon-tree" src="/images/christmas_tree_icon.png" alt="">
+               </a>
+               <h1 class="undercover-link text-black display-5">Weihnachtsmarkt</h1>  
+            </div>
+            <ul class="navbar-items">
+               <li class="navbar-item">
+                  <a class="navbar-link text-black display-7" href="index.html">Startseite</a>
+               </li>
+               <li class="navbar-item">
+                  <a class="navbar-link text-black display-7" href="">Tabelle</a>
+               </li>
+               <li class="navbar-item">
+                  <a class="navbar-link text-black display-7" href="">Statistiken</a>
+               </li>
+               <li class="navbar-item">
+                  <a class="navbar-link text-black display-7" href="tutorial.html">Tutorial</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+   </section>
+   <section class="main-body">
+      <div class="background">
+         <div class="container">
+            <p>
+               Hey Dad hier ist eine kleine Bedienungsanleitung für die Verwendung
+               dieser Website. Frag gerne Leo oder Puzi. Die können dir auch
+               weiterhelfen.
+             </p>
+             <p>
+               Zuerst musst du auf dem Desktop einen neuen Ordner anlegen in den zu die
+               Tabellen Speicherst. Nenne ihn am besten
+               <i>Weihnachtsmarkt_2023</i> oder so in der Art. Für jeden Tag musst du
+               eine neue Tabelle erstellen. Wir benutzern dafür Excel von Microsoft.
+             </p>
+             <figure>
+               <img class="excel_icon" src="/images/excel_icon.png" alt="Excel_icon" />
+               <figcaption>Microsoft Excel</figcaption>
+             </figure>
+             <p>
+               In die Tabelle kannst du die Verkäufe von einem Tag dann so wie im Bild
+               eintragen.
+             </p>
+             <figure>
+               <img
+                 class="excel_example"
+                 src="/images/excel_example.png"
+                 alt="Excel_icon"
+               />
+             </figure>
+             <p>
+               Wenn du alle Verkäufe von einem Tag eingetragen hast solltest du die
+               Tabelle mit dem Namen des Datums speichern. Also zum Beispiel mit
+               <i>02.12.2022</i>. Als Speicherort sollst du den Ordner
+               <i>Weihnachtsmarkt_2023</i> auswählen damit du alle Tabellen schön an
+               einem Ort sammeln kannst.
+             </p>
+             <figure>
+               <img
+                 class="excel_saved_data"
+                 src="/images/excel_saved_data.png"
+                 alt="Excel_icon"
+               />
+             </figure>
+             <p>
+               Das meiste ist jetzt geschaft. Du musst jetzt wieder auf die Startseite
+               gehen und auf den <i>Datei auswählen</i> knopf drücken. Dann kannst du
+               alle Tabellen aus dem Ordner auswählen und hochladen. Die Tabellen sind
+               jetzt hochgeladen und jetzt kann ein Dokument heruntergeladen werden und
+               Statistiken können betrachtet werden.
+             </p> 
+         </div>
+      </div>    
+   </section>
     <hr />
     <footer>
       <a href="index.html">Zurück zur Startseite</a>

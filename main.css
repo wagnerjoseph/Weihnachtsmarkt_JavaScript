@@ -1,11 +1,28 @@
+* {   
+   margin: 0; /* Abstand zum Rand */
+}
+p {
+   background-color: white;
+}
+figure {
+   background-color: white;;
+}
 .navbar-header{    /* we use the dot when we created the class on our own*/
    font-weight: bolder; /* Stärke des Textes */
 }
-h1{         /* this is not a class we created on our own so there is no point */
+.undercover-link{         /* this is not a class we created on our own so there is no point */
+   text-align: center;
+   text-decoration: none;
+
+}
+h1 {
    text-align: center;
 }
+.icon-tree {
+   height: 2em;
+}
 .menubar {
-   background: rgb(215, 215, 215)  /* Hintergrundfarbe */
+   background: rgb(255, 255, 255)  /* Hintergrundfarbe */
 }
 .containerfluid {
    display: flex;  /* Ausrichtung Text in einer Zeile (flex-> nebeneinander)*/
@@ -18,7 +35,7 @@ h1{         /* this is not a class we created on our own so there is no point */
    align-items: center;
    padding-top: 1em;    /* Abstände von oben, unten und links */
    padding-bottom: 1em;
-   padding-left: 2.5em;
+   padding-left: 2em;
    font-size: 1.5rem;  /* Größe Icon */
    line-height: inherit;  /* Zeilenabstand */
    /* white-space: nowrap; */
@@ -34,6 +51,15 @@ h1{         /* this is not a class we created on our own so there is no point */
    align-items: center;
    justify-content: center;
 }
+.navbar-item:hover {
+   height: 5em;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color:rgb(203, 203, 203);
+   border-radius: 0.2em;
+}
 .navbar-link {
    padding: 0.6em 0.6em !important;
    margin: 0 0.6em !important;
@@ -46,36 +72,91 @@ h1{         /* this is not a class we created on our own so there is no point */
    font-size: 2rem;
    line-height: 1.5;
 }
-
 .display-7 {
    font-family: 'DM Sans', sans-serif;
    font-size: 1.6rem;
    line-height: 1.5;
    text-decoration: none;
 }
-.excel_icon{
-   width: 5em;
-}
-.excel_example{
-   width: 40em;
-}
 
-.subscribe-button:hover {
-   opacity: 0.7;
-} 
-.subscribe-button {
+/* Startseite --------------------------------------------------------------*/
+
+.background {
+   padding-top: 20rem;
+   padding-bottom: 20rem;
+   background-repeat: no-repeat;
+   background-attachment:local;
+   background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.7)
+    ),url(/images/Background.jpeg);
+   background-size: cover;
+   z-index: 0;
+   pointer-events: all;
+}
+.container {
+   padding-left: 15em;
+   padding-right: 15em;
+}
+.upload-button {
    min-height: 2em;
    font-family: Arial;
-   font-size: 1em;
+   font-size: 1.5em;
    border-radius: 0.5em;
+   margin-left: 0em;
    cursor: pointer;
    line-height: normal;
-   margin-right: 2em;
-   margin-left: 2em;
-
-   background-color: #04ab20;
-   color: white;
+   background-color: #a0a0a0;
+   border: black;
+   padding: 0.5em 1em;
+   transition: opacity 0.15s;
+   line-height: 15em;
+}
+.upload-button:hover {
+   min-height: 2em;
+   font-size: 1.5em;
+   border-radius: 0.5em;
+   margin-left: 0em;
+   background-color: white;
    border: black;
    padding: 0.5em 1em;
    transition: opacity 0.15s;
 }
+.download-button {
+   min-height: 2em;
+   font-size: 1.5em;
+   border-radius: 0.5em;
+   margin-left: 4em;
+   cursor: pointer;
+   background-color: #a0a0a0;
+   border: black;
+   padding: 0.5em 1em;
+   transition: opacity 0.15s;
+}
+.download-button:hover {
+   min-height: 2em;
+   font-size: 1.5em;
+   border-radius: 0.5em;
+   margin-left: 4em;
+   background-color: white;
+   border: black;
+   padding: 0.5em 1em;
+   transition: opacity 0.15s;
+} 
+
+
+
+/* Tabelle ----------------------------------------------------------------*/
+
+
+/* Statistiken ------------------------------------------------------------*/
+
+
+/* Tutorial ---------------------------------------------------------------*/
+.excel_icon { 
+   width: 5em;
+}
+.excel_example {
+   width: 40em;
+}
+/* ------------------------------------------------------------------------*/

@@ -9,16 +9,19 @@
       <link rel="stylesheet" href="main.css">
    </head>
    <body">
+      <script src="index.js"></script>
       <section class="menubar"> <!--helpts to divide the program into pices and to load the webpage-->
          <nav> <!--is a set of naviation links-->
             <div class="containerfluid">
                <div class="navbar-header-and-logo">                    
-                  <img src="/images/christmas_tree_icon.png" style="height: 2em">
-                  <h1 class="text-black display-5">Weihnachtsmarkt</h1>  
+                  <a class="undercover-link" style="height: 2em" href="/images/Buben.jpeg">
+                     <img class="icon-tree" src="/images/christmas_tree_icon.png" alt="">
+                  </a>
+                  <h1 class="undercover-link text-black display-5">Weihnachtsmarkt</h1>  
                </div>
                <ul class="navbar-items">
                   <li class="navbar-item">
-                     <a class="navbar-link text-black display-7" href="#">Startseite</a>
+                     <a class="navbar-link text-black display-7" href="index.html">Startseite</a>
                   </li>
                   <li class="navbar-item">
                      <a class="navbar-link text-black display-7" href="">Tabelle</a>
@@ -33,20 +36,22 @@
             </div>
          </nav>
       </section>
-      <hr>
-      <script src="index.js"></script>
-      <form action="/action_page.php">
-         <input type="file" id="myFile" name="filename">
-         <input type="submit">
-      </form>
-      <hr>
-      <a href="tutorial.html">Tutorial</a>
+      <section class="main-body">
+         <div class="background">
+            <div class="container">
+               <div class="row">
+                  <form>
+                     <input type="file" id="fileselect" multiple="multiple" hidden>
+                     <label class="upload-button" for="fileselect">Dateien auswählen</label>
+                     <!-- we need No file chosen of the name of the file we choose (with JavaScript)-->
+                     <input type="filesubmit" hidden>
+                     <label class="upload-button" for="filesubmit">Dateien hochladen</label>
+                  </form>
+                  <button class="download-button" href="/images/Buben.jpeg">Dokument herunterladen</button>
+               </div>
+            </div>
+         </div>    
+      </section>
       <a href="mailto:josephwagner200@gmail.com">Schreibe Joseph eine Email</a>
-      <hr>
-      <a href="">Download</a>
-
-
-      <button class="subscribe-button" href="">Download</button>
-   
    </body>
 </html>
