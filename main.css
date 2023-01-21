@@ -187,10 +187,29 @@ h1 {
 
 
 /* Tutorial ---------------------------------------------------------------*/
-.excel_icon { 
-   width: 5em;
+.tutorial-text {
+   line-height: 1.8em;
+   font-size: 1.5em;
 }
-.excel_example {
-   width: 40em;
+.excel-icon { 
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 10%;
+}
+.figcap {
+   text-align: center;
+}
+.excel-example {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+}
+.excel-saved-data {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
 }
 /* ------------------------------------------------------------------------*/
