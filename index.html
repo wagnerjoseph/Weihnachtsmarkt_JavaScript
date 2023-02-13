@@ -8,59 +8,82 @@
       <link rel="icon" href="/images/christmas_tree_icon.png">
       <link rel="stylesheet" href="main.css">
    </head>
-   <body">
-      <script src="index.js"></script>
+   <body>
+
+      <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script> <!-- for the datatables to be read in-->
+      <script src="index.js" type="text/javascript" defer></script>></script>
+
       <section class="menubar"> <!--helpts to divide the program into pices and to load the webpage-->
          <nav> <!--is a set of naviation links-->
             <div class="containerfluid">
                <div class="navbar-header-and-logo">                    
+                  
                   <a class="undercover-link" style="height: 2em" href="/images/Buben.jpeg">
                      <img class="icon-tree" src="/images/christmas_tree_icon.png" alt="">
                   </a>
+
                   <h1 class="undercover-link text-black display-5">Weihnachtsmarkt</h1>  
+               
                </div>
                <ul class="navbar-items">
+                  
                   <li class="navbar-item">
                      <a class="navbar-link text-black display-7" href="index.html">Startseite</a>
                   </li>
+
                   <li class="navbar-item">
                      <a class="navbar-link text-black display-7" href="">Tabelle</a>
                   </li>
+
                   <li class="navbar-item">
                      <a class="navbar-link text-black display-7" href="">Statistiken</a>
                   </li>
+
                   <li class="navbar-item">
                      <a class="navbar-link text-black display-7" href="tutorial.html">Tutorial</a>
                   </li>
+
                </ul>
             </div>
          </nav>
       </section>
+
       <section class="main-body">
          <div class="background">
             <div class="container">
                <div class="row">
                   <form>
-                     <input type="file" id="fileselect" multiple="multiple" hidden>
-                     <label class="upload-button" for="fileselect">Dateien auswählen</label>
-                     <!-- we need No file chosen of the name of the file we choose (with JavaScript)-->
-                     <input type="filesubmit" hidden>
-                     <label class="upload-button" for="filesubmit">Dateien hochladen</label>
+
+                     <input type="file" id="selectFiles" multiple hidden>
+                     <label class="upload-button" for="selectFiles">Dateien auswählen</label>
+                     <!-- we need No file chosen of the name of the file we choose (with JavaScript) -->
+                     
+                     <input type="submit" hidden>
+                     <label class="upload-button" for="submit">Dateien hochladen</label> 
+                  
                   </form>
-                  <button class="download-button" href="/images/Buben.jpeg">Dokument herunterladen</button>
+
+                  <!-- <input id="fileUpload" type="file" />
+                  <button class="download-button" href="/images/Buben.jpeg">Dokument herunterladen</button> -->
+
                </div>
             </div>
          </div>    
       </section>
+
       <section>
       </section>
+
       <section> <!--helpts to divide the program into pices and to load the webpage-->
          <div class="containerfluid">
+            
             <div>                    
                <a class="email display-9 text-black" href="mailto:josephwagner200@gmail.com">Schreibe Joseph eine Email</a> 
             </div>
+
             <p class="name display-9">2023 Joseph Wagner</p>
+
          </div>
-      </section>
+      </section> 
    </body>
 </html>
