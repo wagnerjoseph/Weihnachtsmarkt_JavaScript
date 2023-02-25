@@ -10,8 +10,21 @@
    </head>
    <body>
 
+<<<<<<< HEAD
+      <!-- from Benji: -->     <!-- for the datatables to be read in -->
+      <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script> 
+
+      <!-- For the dataframe stuff -->
+      <script src="https://cdn.jsdelivr.net/npm/danfojs@1.1.2/lib/bundle.min.js"></script>
+
+      <!-- from youtube -->
+      <!-- <script src="https://unpkg.com/read-excel-file@4.x/bundle/read-excel-file.min.js"></script> -->
+      
+      <script type="text/javascript" src="index.js" defer></script></script>  
+=======
       <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script> <!-- for the datatables to be read in-->
       <script src="index.js" type="text/javascript" defer></script>></script>
+>>>>>>> 41e1d0b62fa8cab99fdde12a3a3dd651e5e6c7f5
 
       <section class="menubar"> <!--helpts to divide the program into pices and to load the webpage-->
          <nav> <!--is a set of naviation links-->
@@ -54,6 +67,22 @@
                <div class="row">
                   <form>
 
+<<<<<<< HEAD
+                     <input type="file" id="selectedFiles" multiple hidden> 
+                     <label class="upload-button" for="selectedFiles">Dateien auswählen</label>
+                     <!-- we need No file chosen of the name of the file we choose (with JavaScript) -->
+                     
+                     <!-- is not needed       <input type="submit" hidden >      -->
+                     <!-- <label class="upload-button" for="submit">Dateien hochladen</label> -->
+                     
+                  </form>
+                  
+                  <form>
+
+                     <button class="download-button" href="/images/Buben.jpeg">Dokument herunterladen</button>
+                  
+                  </form>
+=======
                      <input type="file" id="selectFiles" multiple hidden>
                      <label class="upload-button" for="selectFiles">Dateien auswählen</label>
                      <!-- we need No file chosen of the name of the file we choose (with JavaScript) -->
@@ -66,12 +95,14 @@
                   <!-- <input id="fileUpload" type="file" />
                   <button class="download-button" href="/images/Buben.jpeg">Dokument herunterladen</button> -->
 
+>>>>>>> 41e1d0b62fa8cab99fdde12a3a3dd651e5e6c7f5
                </div>
             </div>
          </div>    
       </section>
 
       <section>
+         <table id = "combined_df"> </table>
       </section>
 
       <section> <!--helpts to divide the program into pices and to load the webpage-->
